@@ -9,14 +9,14 @@ public class OrdenarQuick implements Ordenador{
 
     public int quickParticio(int[] array, int inicio, int fim){
         int metade = (inicio + fim)/2;
-        int pivo = array[metade];
+        int pivot = array[metade];
         int i = inicio - 1;
         int j = fim + 1;
-        while (i < j && array[i] < pivo) {
+        while (i < j && array[i] < pivot) {
             i++;
         }
         
-        while (i < j && array[j] > pivo) {
+        while (i < j && array[j] > pivot) {
             j--;
         }
         
